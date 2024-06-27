@@ -3,7 +3,13 @@
 0-pascal_triangle
 """
 
+
 def pascal_triangle(n):
+    """
+    Returns a list of integers
+    representing the Pascal Triangle of n
+    returns empty list if n <= 0
+    """
     box = []
     value = [1]
     if n <= 0:
@@ -22,8 +28,5 @@ def pascal_triangle(n):
                 new_row.append(1)
                 box.append(new_row)
                 print(new_row)
-    
+
         return box
-
-
-pascal_triangle(5)
